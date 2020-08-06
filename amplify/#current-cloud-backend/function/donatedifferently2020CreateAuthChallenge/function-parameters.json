@@ -1,0 +1,15 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-create-challenge"
+  ],
+  "parentResource": "donatedifferently2020",
+  "functionName": "donatedifferently2020CreateAuthChallenge",
+  "resourceName": "donatedifferently2020CreateAuthChallenge",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/home/gitpod/.nvm/versions/node/v12.18.3/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/CreateAuthChallenge",
+  "triggerTemplate": "CreateAuthChallenge.json.ejs",
+  "roleName": "donatedifferently2020CreateAuthChallenge",
+  "skipEdit": true
+}

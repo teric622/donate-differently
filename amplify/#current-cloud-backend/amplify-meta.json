@@ -1,0 +1,131 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-donatedifferently-dev-200625-authRole",
+			"UnauthRoleArn": "arn:aws:iam::465781991717:role/amplify-donatedifferently-dev-200625-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::465781991717:role/amplify-donatedifferently-dev-200625-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-donatedifferently-dev-200625-deployment",
+			"UnauthRoleName": "amplify-donatedifferently-dev-200625-unauthRole",
+			"StackName": "amplify-donatedifferently-dev-200625",
+			"StackId": "arn:aws:cloudformation:us-east-1:465781991717:stack/amplify-donatedifferently-dev-200625/515ace00-d820-11ea-a92f-0a818cac4dad",
+			"AmplifyAppId": "d12eow1itlq81i"
+		}
+	},
+	"function": {
+		"donatedifferently2020DefineAuthChallenge": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2020-08-06T20:46:27.014Z",
+			"lastPackageTimeStamp": "2020-08-06T20:46:27.141Z",
+			"distZipFilename": "donatedifferently2020DefineAuthChallenge-576550317a34344a4664-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-donatedifferently-dev-200625-deployment/amplify-cfn-templates/function/donatedifferently2020DefineAuthChallenge-cloudformation-template.json",
+				"logicalId": "functiondonatedifferently2020DefineAuthChallenge"
+			},
+			"lastPushTimeStamp": "2020-08-06T20:50:03.286Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:465781991717:function:donatedifferently2020DefineAuthChallenge-dev",
+				"Name": "donatedifferently2020DefineAuthChallenge-dev",
+				"LambdaExecutionRole": "donatedifferently2020DefineAuthChallenge-dev"
+			},
+			"lastPushDirHash": "kxFyk6tyILaCK8b+vNPdLCUXaLw="
+		},
+		"donatedifferently2020CreateAuthChallenge": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2020-08-06T20:46:27.018Z",
+			"lastPackageTimeStamp": "2020-08-06T20:46:27.152Z",
+			"distZipFilename": "donatedifferently2020CreateAuthChallenge-652b414c7136357a7148-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-donatedifferently-dev-200625-deployment/amplify-cfn-templates/function/donatedifferently2020CreateAuthChallenge-cloudformation-template.json",
+				"logicalId": "functiondonatedifferently2020CreateAuthChallenge"
+			},
+			"lastPushTimeStamp": "2020-08-06T20:50:03.286Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:465781991717:function:donatedifferently2020CreateAuthChallenge-dev",
+				"Name": "donatedifferently2020CreateAuthChallenge-dev",
+				"LambdaExecutionRole": "donatedifferently2020CreateAuthChallenge-dev"
+			},
+			"lastPushDirHash": "xOvg4wc7dm7ZTE7qY5XXq3Y73ik="
+		},
+		"donatedifferently2020VerifyAuthChallengeResponse": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2020-08-06T20:46:27.018Z",
+			"lastPackageTimeStamp": "2020-08-06T20:46:27.483Z",
+			"distZipFilename": "donatedifferently2020VerifyAuthChallengeResponse-717132786a5635625179-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-donatedifferently-dev-200625-deployment/amplify-cfn-templates/function/donatedifferently2020VerifyAuthChallengeResponse-cloudformation-template.json",
+				"logicalId": "functiondonatedifferently2020VerifyAuthChallengeResponse"
+			},
+			"lastPushTimeStamp": "2020-08-06T20:50:03.286Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:465781991717:function:donatedifferently2020VerifyAuthChallengeResponse-dev",
+				"Name": "donatedifferently2020VerifyAuthChallengeResponse-dev",
+				"LambdaExecutionRole": "donatedifferently2020VerifyAuthChallengeResponse-dev"
+			},
+			"lastPushDirHash": "H5rJdn8KN4GK+R7WWnFyjlX5pog="
+		}
+	},
+	"auth": {
+		"donatedifferently2020": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "donatedifferently2020DefineAuthChallenge",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "donatedifferently2020CreateAuthChallenge",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "donatedifferently2020VerifyAuthChallengeResponse",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				}
+			],
+			"customAuth": true,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-donatedifferently-dev-200625-deployment/amplify-cfn-templates/auth/donatedifferently2020-cloudformation-template.yml",
+				"logicalId": "authdonatedifferently2020"
+			},
+			"lastPushTimeStamp": "2020-08-06T20:50:03.286Z",
+			"output": {
+				"GoogleWebClient": "847688176685-r1volkuv5j0110llfpahooe5oj45le6l.apps.googleusercontent.com",
+				"CreatedSNSRole": "arn:aws:iam::465781991717:role/snsundefined200625-dev",
+				"AppClientSecret": "oimr6aak3upeh57ui1egn44oj04r8qlat1fhpfpsufn7jqvf6sa",
+				"UserPoolId": "us-east-1_vXAV9h3AH",
+				"AppClientIDWeb": "3en4nufq9ig417bu9k72eskp85",
+				"AppClientID": "d5kqln2ngnvce56vnfm7em5j6",
+				"FacebookWebClient": "1153057691742366",
+				"IdentityPoolId": "us-east-1:ff0a7291-ef93-4e06-a57c-e2b71f9d2463",
+				"IdentityPoolName": "donatedifferently2020_identity_pool2020__dev",
+				"UserPoolName": "donatedifferently2020_user_pool2020"
+			},
+			"lastPushDirHash": "3qw+ueu1CTjv+zjzsirWMGzrC+w="
+		}
+	}
+}

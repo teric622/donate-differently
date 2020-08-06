@@ -1,0 +1,30 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-donatedifferently-dev-200625-authRole",
+            "UnauthRoleArn": "arn:aws:iam::465781991717:role/amplify-donatedifferently-dev-200625-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::465781991717:role/amplify-donatedifferently-dev-200625-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-donatedifferently-dev-200625-deployment",
+            "UnauthRoleName": "amplify-donatedifferently-dev-200625-unauthRole",
+            "StackName": "amplify-donatedifferently-dev-200625",
+            "StackId": "arn:aws:cloudformation:us-east-1:465781991717:stack/amplify-donatedifferently-dev-200625/515ace00-d820-11ea-a92f-0a818cac4dad",
+            "AmplifyAppId": "d12eow1itlq81i"
+        },
+        "categories": {
+            "function": {
+                "donatedifferently2020DefineAuthChallenge": {},
+                "donatedifferently2020CreateAuthChallenge": {},
+                "donatedifferently2020VerifyAuthChallengeResponse": {
+                    "RECAPTCHASECRET": "6LeQgbsZAAAAAOqErFFVY5foq3matJ4z46tkMM89"
+                }
+            },
+            "auth": {
+                "donatedifferently2020": {
+                    "facebookAppId": "1153057691742366",
+                    "googleClientId": "847688176685-r1volkuv5j0110llfpahooe5oj45le6l.apps.googleusercontent.com"
+                }
+            }
+        }
+    }
+}
