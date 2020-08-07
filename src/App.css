@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.FeedPage{
+  background-color: orange;
+  max-width: 1vh;
+  max-height: fit-content;
+ align-self: flex-end;
+ width: 2em;
+ height: 12em;
+ padding: 50%;
+ margin-left: -50%;
+ margin-bottom: 60%;
+ margin-top: 50%;
+}
+.Text{
+  align-self: center;
+ margin-left:250% ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header{
+  background-color: blueviolet;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Top{
+  background-color: chartreuse;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-section{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height:2em;
+  position: sticky;
+  top:0;
+  width: 100%;
+  background-color: rgba(var(--b3f,250,250,250),1);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  max-width: 10vh;
+  padding: 26px 20px;
+  transition: height .2s ease-in-out;
+  width: 100%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+  display: block;
+  background-position: -176px 0px;
+  background-image: url(../src/assets/logo_transparent.png);
+  background-size: 405px 379px;
+  height: 35px;
+  width: 176px;
+  text-indent: -1000px;
+
+  
 }
