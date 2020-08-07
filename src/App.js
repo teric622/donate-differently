@@ -5,7 +5,8 @@ import CommentBox from './components/UtilitiesContainer/CommentBox';
 import Feed from './components/FeedContainer/Feed';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Welcome from './components/LoginContainer/Welcome';
-import Login from './components/LoginContainer/Login'
+import Login from './components/LoginContainer/Login';
+import Signup from './components/LoginContainer/Signup';
 
 function App() {
   return (

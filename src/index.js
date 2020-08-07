@@ -6,10 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import CommentBox from './components/UtilitiesContainer/CommentBox';
 import Login from './components/LoginContainer/Login';
 import Welcome from './components/LoginContainer/Welcome';
+import Signup from './components/LoginContainer/Signup';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome />
+    <Signup />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -15,6 +15,9 @@ export default class Welcome extends Component {
                     <center>
                     <img src={LogoTransparent} alt="logo" className="welcomelogo" />
                     </center>
+                    <center>
+                    <button type="button" id="myBtn" onclick="myFunction()">Login</button>
+                    </center>
                 </div>
                 </div>
             </div>
