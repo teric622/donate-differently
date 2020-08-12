@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.comment-list{
+  color: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.comment-box{
+  color: black
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.comment-count{
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.comment-form{
+  color:black;
+}
+
+
+.welcomelogo{
+
+  height: 35vmax;
+  width: auto;
+  background-color: whitesmoke;
+  border: solid black 1px;
+  border-radius: 10px 10px;
+
+}
+
+.welcome{
+  justify-self: center;
+  align-self: center;
+  height: 100vmax;
+  width: 100vmax;
+}
+
+.welcome, h1{
+  color:#69E9F5;
+}
+
+.welcome, h2{
+  color: #413670;
+}
+
+.App{
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: flex-end;
+  justify-content: center;  
+  text-align: center;
+  width: auto;
+  margin: 0; 
+
+}
+.App button{
+
+  height: 7vmax; 
+  width: 35vmax; 
+  font-family: cursive;
+  font-size: 4vmax;  
+  border: #282c34 solid;  
+  border-radius: 15px;
+  background-color:#69E9F5;
+  color: #413670;
+  text-shadow: 2px 2px white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.login .loginInfo{
+
+  margin-top: 40%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome .welcome-info{
+  margin-top: 40%;
+}
+
+.signup{
+  margin-top: 40%;
+}
+
+.ResetPassword .ForgotPassword-info{
+  margin-top: 40%;
 }
