@@ -6,7 +6,7 @@ export default class Header extends Component{
         return (
             <Header className="header-section">
 <div className= "header-section__content" >
-    <a className ="header-section__logo">logo</a>
+    {/* <a className ="header-section__logo">logo</a> */}
 
 </div>
 </Header>

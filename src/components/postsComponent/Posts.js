@@ -9,29 +9,29 @@ export default class Posts extends Component{
         const data = [
             {
             "user_name": "Eroc",
-            "user_image": "",
-            "image": "http://localhost:3000/user.png",
+            "user_image": "http://localhost:3000/user.png",
+            "image": "http://localhost:3000/1.jpg",
             "image_desc":"test Desc"
             },   
             
             {
                 "user_name": "Eroc",
-                "user_image": "",
-                "image": "",
+                "user_image": "http://localhost:3000/user.png",
+                "image": "http://localhost:3000/2.jpg",
                 "image_desc":"test Desc"
                 },
             
                 {
                     "user_name": "Eroc",
-                    "user_image": "",
-                    "image": "",
+                    "user_image": "http://localhost:3000/user.png",
+                    "image": "http://localhost:3000/3.jpg",
                     "image_desc":"test Desc"
                     },
             
             
                 ]
         return (
-            <div className="posts-section">
+            <div className="posts-container">
       <Post data={data[0]}/>
       <Post data={data[1]}/>
       <Post data={data[2]}/>
