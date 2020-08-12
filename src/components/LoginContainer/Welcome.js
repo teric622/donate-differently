@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import LogoTransparent from '../../images/LogoTransparent.png';
+import LoginButton from '../ButtonsContainer/LoginButton';
+import SignupButton from '../ButtonsContainer/SignupButton';
+
+
 
 
 export default class Welcome extends Component {
@@ -9,16 +13,20 @@ export default class Welcome extends Component {
             <div className="welcome">
                 <div className="welcome-info">
                     <center>
-                    <h1>Donate-Differently</h1>
+                    <h1>Donate</h1>
+                    <h2>Differently</h2>
                     </center>
                     <div>
                     <center>
                     <img src={LogoTransparent} alt="logo" className="welcomelogo" />
                     </center>
                     <center>
-                    <button type="button" id="myBtn" onclick="myFunction()">Login</button>
+                    <LoginButton />
+                    <SignupButton />
+                    
                     </center>
                 </div>
+                
                 </div>
             </div>
         );

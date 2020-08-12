@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import CommentBox from './components/UtilitiesContainer/CommentBox';
-import Login from './components/LoginContainer/Login';
-import Welcome from './components/LoginContainer/Welcome';
-import Signup from './components/LoginContainer/Signup';
+
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Signup />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import LoginButton from '../ButtonsContainer/LoginButton';
+import ForgotPassword from '../UtilitiesContainer/ForgotPassword';
+import EnterButton from '../ButtonsContainer/EnterButton';
 
 
 
@@ -29,7 +32,7 @@ export default class Signup extends Component {
                         <br />
 
                         <div>
-                            <input type="text" className="inputBox" placeholder="Username" />
+                            <input type="text" className="inputBox" placeholder="Phone Number (optional)" />
                         </div>
                         <br />
 
@@ -52,11 +55,9 @@ export default class Signup extends Component {
                         </div>
                         <br />
 
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="submit" className="btn btn-success submit">Submit</button>
-                        </div>
                     </form>
-
+                    <LoginButton />
+                    <EnterButton />
                 </center>
             </div>
         );
