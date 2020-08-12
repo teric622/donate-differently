@@ -1,12 +1,12 @@
 const { Component } = require("react")
 import React, { Component } from 'react';
 
-export default class UserPage extends Componet{
+export default class UserPage extends Component{
     render(){
         return(
             <div className="Terms">
                 <h1>Terms And Conditions</h1>
-            </div>
+            
             <p>1. YOUR AGREEMENT
                 By using this App, you agree to be bound by, and to comply with, these Terms and Conditions. 
                 If you do not agree to these Terms and Conditions, please do not use this App.
@@ -17,6 +17,7 @@ export default class UserPage extends Componet{
                 Terms and Conditions and the reasonableness of these standards for notice of changes. 
                 For your information, this page was last updated as of the date at the top of these terms and conditions.
             </p>
-        )
+            </div>
+        );
     }
 }
