@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-verify"
+  ],
+  "parentResource": "donatedifferently2020",
+  "functionName": "donatedifferently2020VerifyAuthChallengeResponse",
+  "resourceName": "donatedifferently2020VerifyAuthChallengeResponse",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/home/gitpod/.nvm/versions/node/v12.18.3/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/VerifyAuthChallengeResponse",
+  "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+  "roleName": "donatedifferently2020VerifyAuthChallengeResponse",
+  "skipEdit": true,
+  "RECAPTCHASECRET": "6LeQgbsZAAAAAOqErFFVY5foq3matJ4z46tkMM89"
+}

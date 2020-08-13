@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+<<<<<<< HEAD
 import DonationPage from './components/DonationContainer/DonationPage';
 import CommentBox from './components/UtilitiesContainer/CommentBox';
 import Feed from './components/FeedContainer/Feed';
@@ -25,6 +26,18 @@ function App() {
         </Switch>
       </div>
     </Router>
+=======
+import Header from './components/HeaderComponent/Header'; 
+
+function App() {
+  return (
+    <div className="App">
+
+<Header/>
+
+
+</div>
+>>>>>>> 3bbb4d4b3bcbbb062fa08bc23180049a137e5e9d
   );
 }
 
