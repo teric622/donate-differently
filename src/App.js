@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+>>>>>>> 71cc80d5c04c1d732a53d72b3d4830571f913b17
 import './App.css';
 <<<<<<< HEAD
 import DonationPage from './components/DonationContainer/DonationPage';
@@ -29,6 +34,7 @@ function App() {
 =======
 import Header from './components/HeaderComponent/Header'; 
 
+<<<<<<< HEAD
 function App() {
   return (
     <div className="App">
@@ -42,3 +48,28 @@ function App() {
 }
 
 export default App;
+=======
+//importing user features
+import UserHome from './components/UserContainer/UserHome';
+
+
+export default class App extends Component{
+
+  render() {
+
+    return(
+
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path='/' component={UserHome} />
+          </Switch>
+        </div>
+      </Router>
+
+    );
+
+  }
+
+}
+>>>>>>> 71cc80d5c04c1d732a53d72b3d4830571f913b17
